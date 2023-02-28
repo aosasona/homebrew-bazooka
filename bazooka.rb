@@ -5,20 +5,20 @@
 class Bazooka < Formula
   desc ""
   homepage "https://github.com/aosasona/homebrew-bazooka"
-  version "0.1.16"
+  version "0.1.20"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aosasona/bazooka/releases/download/v0.1.16/bazooka_0.1.16_Darwin_arm64.tar.gz"
-      sha256 "71b1410b20f1ac7ef6e27a0c461abbeeaed7c9b669f53e10988a15fef2df9b1a"
+      url "https://github.com/aosasona/bazooka/releases/download/v0.1.20/bazooka_0.1.20_Darwin_arm64.tar.gz"
+      sha256 "85ea335c20919b5de60f13e1d402f331fd978321df9a4341fa8b07f0539e268c"
 
       def install
         bin.install "bazooka"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aosasona/bazooka/releases/download/v0.1.16/bazooka_0.1.16_Darwin_x86_64.tar.gz"
-      sha256 "2a45b3ad5d7861ea2d41a4fc9d860abb69c3109e352ff2b502abaec86109d091"
+      url "https://github.com/aosasona/bazooka/releases/download/v0.1.20/bazooka_0.1.20_Darwin_x86_64.tar.gz"
+      sha256 "5880887e05782861a60871efcf92bf1535e62e0f66a60d4511a40c2fed798c1d"
 
       def install
         bin.install "bazooka"
@@ -28,16 +28,16 @@ class Bazooka < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aosasona/bazooka/releases/download/v0.1.16/bazooka_0.1.16_Linux_arm64.tar.gz"
-      sha256 "9a667438a63d2e9b63b2cfbd551a99d239880917a0925ff6ef7399e38b60cc87"
+      url "https://github.com/aosasona/bazooka/releases/download/v0.1.20/bazooka_0.1.20_Linux_arm64.tar.gz"
+      sha256 "0d92e2822133b65384ec34f6318cd012921336d1d78e76ad8e1caa5752d0f5df"
 
       def install
         bin.install "bazooka"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aosasona/bazooka/releases/download/v0.1.16/bazooka_0.1.16_Linux_x86_64.tar.gz"
-      sha256 "6928bfdcb0a26c1a2742ed5ab05995e1c1391411f995d9021134bb245c24bd0a"
+      url "https://github.com/aosasona/bazooka/releases/download/v0.1.20/bazooka_0.1.20_Linux_x86_64.tar.gz"
+      sha256 "5901bb20799460e1cb00891c8b64e5413b707afdd502a5b937bf92a056bf3457"
 
       def install
         bin.install "bazooka"
